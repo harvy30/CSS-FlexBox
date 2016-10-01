@@ -1,0 +1,78 @@
+.parent{
+	border: 5px solid lightcoral;
+}
+.item{
+	height: 50px;
+	margin: 5px;
+	background:blue;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	font-weight: 600;
+}
+.parent{
+  height: 200px;
+	display: flex;
+  flex-direction:column;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
+  align-items:flex-start;
+  align-items:flex-strech;
+  align-items:flex-center; 
+  justify-content: space-around;
+  align-items:basline; 
+  align-content:stretch;
+  flex-wrap:wrap;
+  align-content:flex-end;
+  align-content:center;
+  align-content:space-around;
+  align-content:space-between;
+  flex-direction: column; 
+  
+  
+  
+}
+ .item{
+  width:20%;
+}  
+ .item:nth-child(3){
+	font-size:80px;
+} 
+
+//Flex Grow//
+ .item {
+    flex-grow: 1;
+  }
+.item:nth-child(2){
+  flex-grow:3
+  } 
+ .item:nth-child(4){
+  flex-grow: 8
+}
+ 
+//flex-basis//
+.item{
+  width:150px;
+}
+ .item:nth-child(2){
+  flex-basis:19px;
+} 
+ .item:nth-child(2){
+  flex : 2 3 30px;
+} 
+//align-self//
+.item{
+  width:200px;
+}
+
+
+.item:nth-child(2){
+  //align-self:flex-end;
+  align-self:stretch;
+}
+
+
+
